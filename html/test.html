@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>HTML测试模板</title>
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <script src="../js/jquery-3.3.1.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+</head>
+<body>
+<p id="p1"><b>Hello</b> world!</p>
+<form class="form-group">
+  <input name="name" id="name" type="text" maxlength="6" required>
+  <input name="psw" id="psw" type="password" required>
+  <input name="mail" id="mail" type="mail" required>
+  <input name="number" type="number" min="0" class="form-control" required>
+</form>
+<iframe src="./blank.html" name="test" style="width: 500px;height: 500px;"></iframe>
+<div contenteditable><b>lalala</b><a>jjsjjs</a></div>
+<script>
+ window.onload = function () {
+   frames['test'].document.designMode = 'on';
+ }
+</script>
+</body>
+<style>
+  html{
+    padding:20px;
+  }
+</style>
+</html>
